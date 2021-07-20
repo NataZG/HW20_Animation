@@ -13,8 +13,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var springBtn: SpringButton!
     
+    @IBOutlet weak var springLabel: SpringLabel!
+    
+    @IBOutlet weak var springViewLabel: SpringLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpSpringBtn()
+        setUpSpringView()
         // Do any additional setup after loading the view.
     }
 
@@ -39,6 +44,17 @@ class ViewController: UIViewController {
         springBtn.curve = Curve.easeOut.rawValue
         // старт анимции
         springBtn.animate()
+        
+        springLabel.text = String(springView.animation)
+        springViewLabel.text = String(springView.curve)
+    }
+    
+    private func setUpSpringBtn() {
+        springBtn.layer.cornerRadius = self.springBtn.bounds.height/2
+    }
+    
+    private func setUpSpringView() {
+        springView.layer.cornerRadius = self.springView.bounds.height/4
     }
 
 }

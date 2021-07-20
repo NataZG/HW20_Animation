@@ -18,7 +18,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd3-bJ-jiK" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhB-yA-QSZ" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="34.5" y="40" width="171" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="uhB-yA-QSZ" firstAttribute="top" secondItem="jd3-bJ-jiK" secondAttribute="top" constant="40" id="WUP-O6-pe6"/>
+                                    <constraint firstItem="uhB-yA-QSZ" firstAttribute="centerX" secondItem="jd3-bJ-jiK" secondAttribute="centerX" id="lUb-Cc-fqm"/>
+                                    <constraint firstItem="uhB-yA-QSZ" firstAttribute="centerY" secondItem="jd3-bJ-jiK" secondAttribute="centerY" id="wtg-xB-fxH"/>
+                                    <constraint firstItem="uhB-yA-QSZ" firstAttribute="width" secondItem="jd3-bJ-jiK" secondAttribute="height" multiplier="171:128" id="zUo-Kb-ssR"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-mb-6XL" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="171" y="740" width="72" height="42"/>
@@ -30,6 +44,12 @@
                                     <action selector="springAnimationBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjT-Zj-Q7N"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wait a bit..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-DS-xFx" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="122" y="499" width="171" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,15 +58,20 @@
                             <constraint firstItem="NQQ-mb-6XL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="MMq-vb-nm6"/>
                             <constraint firstItem="jd3-bJ-jiK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="TGG-8S-JiR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NQQ-mb-6XL" secondAttribute="trailing" constant="171" id="Tpd-Vp-gLW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWE-DS-xFx" secondAttribute="trailing" constant="121" id="YVY-Ys-HSl"/>
+                            <constraint firstItem="uWE-DS-xFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="ZPF-Q2-ShZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd3-bJ-jiK" secondAttribute="trailing" constant="87" id="Zg6-yY-g3Z"/>
                             <constraint firstAttribute="bottom" secondItem="jd3-bJ-jiK" secondAttribute="bottom" constant="569" id="fT2-K7-mLX"/>
+                            <constraint firstAttribute="bottom" secondItem="uWE-DS-xFx" secondAttribute="bottom" constant="349" id="fb6-xd-q1Z"/>
                             <constraint firstItem="jd3-bJ-jiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ohJ-yy-bUN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bO8-px-fJt"/>
                     <connections>
                         <outlet property="springBtn" destination="NQQ-mb-6XL" id="dGe-yC-5Lv"/>
+                        <outlet property="springLabel" destination="uWE-DS-xFx" id="DGT-4O-vaj"/>
                         <outlet property="springView" destination="jd3-bJ-jiK" id="HdN-5v-ZyL"/>
+                        <outlet property="springViewLabel" destination="uhB-yA-QSZ" id="78F-y0-7lw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
