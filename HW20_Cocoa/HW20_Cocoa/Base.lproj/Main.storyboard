@@ -34,41 +34,55 @@
                                     <constraint firstItem="uhB-yA-QSZ" firstAttribute="width" secondItem="jd3-bJ-jiK" secondAttribute="height" multiplier="171:128" id="zUo-Kb-ssR"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-mb-6XL" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="171" y="740" width="72" height="42"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Hi!"/>
-                                <connections>
-                                    <action selector="springAnimationBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjT-Zj-Q7N"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wait a bit..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-DS-xFx" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="122" y="499" width="171" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-mb-6XL" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="171" y="695" width="72" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="springAnimationBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjT-Zj-Q7N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-D9-uqI" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="171" y="760" width="72" height="42"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="KN2-ok-40V" kind="show" identifier="goToSecondVC" id="rSk-AF-CxS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NQQ-mb-6XL" secondAttribute="bottom" constant="80" id="7Nc-0f-gYi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NQQ-mb-6XL" secondAttribute="bottom" constant="125" id="7Nc-0f-gYi"/>
                             <constraint firstItem="NQQ-mb-6XL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="MMq-vb-nm6"/>
                             <constraint firstItem="jd3-bJ-jiK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="TGG-8S-JiR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NQQ-mb-6XL" secondAttribute="trailing" constant="171" id="Tpd-Vp-gLW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWE-DS-xFx" secondAttribute="trailing" constant="121" id="YVY-Ys-HSl"/>
                             <constraint firstItem="uWE-DS-xFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="ZPF-Q2-ShZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd3-bJ-jiK" secondAttribute="trailing" constant="87" id="Zg6-yY-g3Z"/>
+                            <constraint firstItem="H9R-D9-uqI" firstAttribute="leading" secondItem="NQQ-mb-6XL" secondAttribute="leading" id="aKw-hr-yei"/>
                             <constraint firstAttribute="bottom" secondItem="jd3-bJ-jiK" secondAttribute="bottom" constant="569" id="fT2-K7-mLX"/>
                             <constraint firstAttribute="bottom" secondItem="uWE-DS-xFx" secondAttribute="bottom" constant="349" id="fb6-xd-q1Z"/>
                             <constraint firstItem="jd3-bJ-jiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ohJ-yy-bUN"/>
+                            <constraint firstItem="H9R-D9-uqI" firstAttribute="top" secondItem="NQQ-mb-6XL" secondAttribute="bottom" constant="23" id="u5G-yf-a28"/>
+                            <constraint firstItem="H9R-D9-uqI" firstAttribute="trailing" secondItem="NQQ-mb-6XL" secondAttribute="trailing" id="yj1-UK-QgU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bO8-px-fJt"/>
                     <connections>
                         <outlet property="springBtn" destination="NQQ-mb-6XL" id="dGe-yC-5Lv"/>
+                        <outlet property="springBtnNext" destination="H9R-D9-uqI" id="wb4-5f-c1h"/>
                         <outlet property="springLabel" destination="uWE-DS-xFx" id="DGT-4O-vaj"/>
                         <outlet property="springView" destination="jd3-bJ-jiK" id="HdN-5v-ZyL"/>
                         <outlet property="springViewLabel" destination="uhB-yA-QSZ" id="78F-y0-7lw"/>
@@ -77,6 +91,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Prq-yR-sdR">
+            <objects>
+                <viewController id="KN2-ok-40V" customClass="SecondViewController" customModule="HW20_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DOM-O3-nwk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFS-3y-0hQ" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-4m-sdD" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="34.5" y="40" width="171" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="rj9-4m-sdD" firstAttribute="top" secondItem="YFS-3y-0hQ" secondAttribute="top" constant="40" id="9DC-UU-pmN"/>
+                                    <constraint firstItem="rj9-4m-sdD" firstAttribute="centerX" secondItem="YFS-3y-0hQ" secondAttribute="centerX" id="Ezd-Kz-8sm"/>
+                                    <constraint firstItem="rj9-4m-sdD" firstAttribute="width" secondItem="YFS-3y-0hQ" secondAttribute="height" multiplier="171:128" id="aV6-c6-f1Y"/>
+                                    <constraint firstItem="rj9-4m-sdD" firstAttribute="centerY" secondItem="YFS-3y-0hQ" secondAttribute="centerY" id="ueh-as-rRd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wait a bit..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVI-o4-YJZ" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="122" y="499" width="171" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrv-w5-e2x" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="171" y="695" width="72" height="42"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="springAnimationBtnAction" destination="KN2-ok-40V" eventType="touchUpInside" id="cWN-y9-Dfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxX-ev-aTH" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="171" y="760" width="72" height="42"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="changeDataInFirstVC" destination="KN2-ok-40V" eventType="touchUpInside" id="pYo-16-KPO"/>
+                                    <segue destination="bgp-zS-K3O" kind="unwind" unwindAction="unwindToViewController:" id="S4K-jw-97L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CRI-a7-lfu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YFS-3y-0hQ" secondAttribute="bottom" constant="569" id="5z0-am-I9Z"/>
+                            <constraint firstItem="YFS-3y-0hQ" firstAttribute="top" secondItem="CRI-a7-lfu" secondAttribute="top" constant="111" id="T2D-6b-hLu"/>
+                            <constraint firstItem="CRI-a7-lfu" firstAttribute="trailing" secondItem="fVI-o4-YJZ" secondAttribute="trailing" constant="121" id="X8b-o2-AOE"/>
+                            <constraint firstItem="fVI-o4-YJZ" firstAttribute="leading" secondItem="CRI-a7-lfu" secondAttribute="leading" constant="122" id="dFm-ud-FUo"/>
+                            <constraint firstItem="CRI-a7-lfu" firstAttribute="bottom" secondItem="vrv-w5-e2x" secondAttribute="bottom" constant="125" id="htx-vD-lSK"/>
+                            <constraint firstItem="CRI-a7-lfu" firstAttribute="trailing" secondItem="YFS-3y-0hQ" secondAttribute="trailing" constant="87" id="iK8-Ra-mt7"/>
+                            <constraint firstItem="YFS-3y-0hQ" firstAttribute="leading" secondItem="CRI-a7-lfu" secondAttribute="leading" constant="87" id="jAV-Qv-nuv"/>
+                            <constraint firstItem="CRI-a7-lfu" firstAttribute="trailing" secondItem="vrv-w5-e2x" secondAttribute="trailing" constant="171" id="nbN-yt-gS7"/>
+                            <constraint firstAttribute="bottom" secondItem="fVI-o4-YJZ" secondAttribute="bottom" constant="349" id="qxn-Ih-1M5"/>
+                            <constraint firstItem="MxX-ev-aTH" firstAttribute="leading" secondItem="vrv-w5-e2x" secondAttribute="leading" id="qxu-A1-9tT"/>
+                            <constraint firstItem="MxX-ev-aTH" firstAttribute="trailing" secondItem="vrv-w5-e2x" secondAttribute="trailing" id="r0j-wA-kIp"/>
+                            <constraint firstItem="MxX-ev-aTH" firstAttribute="top" secondItem="vrv-w5-e2x" secondAttribute="bottom" constant="23" id="r69-ve-zvz"/>
+                            <constraint firstItem="vrv-w5-e2x" firstAttribute="leading" secondItem="CRI-a7-lfu" secondAttribute="leading" constant="171" id="tA2-Fb-Kva"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YNx-9O-lqc"/>
+                    <connections>
+                        <outlet property="springBtnFinish" destination="MxX-ev-aTH" id="IKe-1i-T5f"/>
+                        <outlet property="springBtnGo" destination="vrv-w5-e2x" id="vui-3t-PgM"/>
+                        <outlet property="springLbl" destination="fVI-o4-YJZ" id="ljp-dt-002"/>
+                        <outlet property="springView" destination="YFS-3y-0hQ" id="APx-GZ-Urc"/>
+                        <outlet property="springViewLbl" destination="rj9-4m-sdD" id="ScK-ic-L06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0b-9F-6eb" sceneMemberID="firstResponder"/>
+                <exit id="bgp-zS-K3O" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gM7-ha-UMW">
@@ -100,6 +200,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -14,6 +14,8 @@
 		416C3DC226A6D1D70082D583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416C3DC126A6D1D70082D583 /* Assets.xcassets */; };
 		416C3DC526A6D1D70082D583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416C3DC326A6D1D70082D583 /* LaunchScreen.storyboard */; };
 		416C3DCE26A6D94B0082D583 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 416C3DCD26A6D94B0082D583 /* SwiftyJSON */; };
+		416C3DD226A6E6850082D583 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C3DD126A6E6850082D583 /* Enums.swift */; };
+		416C3DD426A81A1C0082D583 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C3DD326A81A1C0082D583 /* SecondViewController.swift */; };
 		E5BF7ADB03572EF255133F88 /* Pods_HW20_Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B1B7A89AD4CA952660F280 /* Pods_HW20_Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		416C3DC126A6D1D70082D583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		416C3DC426A6D1D70082D583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		416C3DC626A6D1D70082D583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416C3DD126A6E6850082D583 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		416C3DD326A81A1C0082D583 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		449AFB3E2E052EF02CB59700 /* Pods-HW20_Cocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW20_Cocoa.debug.xcconfig"; path = "Target Support Files/Pods-HW20_Cocoa/Pods-HW20_Cocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		C9B1B7A89AD4CA952660F280 /* Pods_HW20_Cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW20_Cocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,10 +81,12 @@
 				416C3DB826A6D1D10082D583 /* AppDelegate.swift */,
 				416C3DBA26A6D1D10082D583 /* SceneDelegate.swift */,
 				416C3DBC26A6D1D10082D583 /* ViewController.swift */,
+				416C3DD326A81A1C0082D583 /* SecondViewController.swift */,
 				416C3DBE26A6D1D20082D583 /* Main.storyboard */,
 				416C3DC126A6D1D70082D583 /* Assets.xcassets */,
 				416C3DC326A6D1D70082D583 /* LaunchScreen.storyboard */,
 				416C3DC626A6D1D70082D583 /* Info.plist */,
+				416C3DD126A6E6850082D583 /* Enums.swift */,
 			);
 			path = HW20_Cocoa;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 			files = (
 				416C3DBD26A6D1D10082D583 /* ViewController.swift in Sources */,
 				416C3DB926A6D1D10082D583 /* AppDelegate.swift in Sources */,
+				416C3DD226A6E6850082D583 /* Enums.swift in Sources */,
+				416C3DD426A81A1C0082D583 /* SecondViewController.swift in Sources */,
 				416C3DBB26A6D1D10082D583 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
